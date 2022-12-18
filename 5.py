@@ -18,7 +18,7 @@ def buildDock(input):
         curList.append(to_stack)
         moves.append(curList)
 
-def crane():
+def crane(): # Part 1
     for move in moves:
         quantity , from_index , to_index = move[0],move[1],move[2]
         # print("\n-----------------------------------------------------------------------")
@@ -28,7 +28,7 @@ def crane():
         # print(f"Result after moves \nFrom Stack:{dock[from_index]}\nTo Stack:{dock[to_index]}")
         # print("-----------------------------------------------------------------------\n")
 
-def newCrane():
+def newCrane(): # Part 2
     for move in moves:
         quantity , from_index , to_index = move[0],move[1],move[2]
         # print("\n-----------------------------------------------------------------------")
@@ -44,8 +44,8 @@ def runner(input):
     # for stack in dock: print(stack)
     print("Moves initialized")
     # for move in moves: print(f"Move {move[0]} boxes from stack {move[1]} to stack {move[2]}")
-    # crane()
-    newCrane()
+    # crane() # Part 1 Uncomment for Part 1
+    newCrane() # Part 2 uncomment for part 2 
     print("Moves Completed")
     for stack in dock: print(stack)
 
